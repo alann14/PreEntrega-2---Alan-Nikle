@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/styles.css">
+
+    <title>Contacto</title>
+</head>
+<style>
+    body{ 
+        background-color: rgb(201, 219, 219);
+        background-size: cover;
+        background-position: center;
+         }
+</style>
+    <header>
+        <div class="logo-container">
+            <img src="../multimedia/logo2.jpg" alt="Notigool Logo">
+            
+        </div>
+        
+        <div class="enlaces">
+        <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/liga-profesional.html">Liga Profesional</a></li>
+            <li><a href="../pages/primera-nacional.html">Primera Nacional</a></li>
+            <li><a href="../pages/copa-libertadores.html">Copa Libertadores</a></li>
+            <li><a href="../pages/copa-sudamericana.html">Copa Sudamericana</a></li>
+        </ul>
+        </nav>
+        </div>
+    </header>
+
+<body>
+    
+    <form>
+        <style>
+            form {
+                width: 50%; /* Ancho del formulario */
+                margin: 0 auto; /* Centrar el formulario */
+                padding: 20px;
+                border: 1px solid #ddd;
+                background-color: #f9f9f9;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            input, select, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                box-sizing: border-box; /* Asegura que el relleno esté incluido en el ancho */
+            }
+            input[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+            }
+            input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <h1>Formulario de Contacto</h1>
+    
+    <form action="/enviar-formulario" method="post">
+        <!-- Campo Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        
+        <!-- Campo Correo Electrónico -->
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+        
+        <!-- Campo Selección de Motivo de Contacto -->
+        <label for="motivo">Motivo de Contacto:</label>
+        <select id="motivo" name="motivo">
+            <option value="soporte">Comentario</option>
+            <option value="ventas">Consulta</option>
+            <option value="otro">Otro</option>
+        </select>
+        
+        <!-- Campo de Texto para Mensaje -->
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        
+        <!-- Botón de Enviar -->
+        <input type="submit" value="Enviar">
+    </form>
+    </form>
+   
+</body>
+<footer>
+   
+    <p>&copy; 2024 Noticias de Fútbol</p>
+</footer>
+</html>
